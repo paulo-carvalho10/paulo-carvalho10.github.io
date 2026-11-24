@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="titulo">Paulo Fernando Carvalho · Portfólio</title>
+    <meta
+      name="description"
+      data-i18n-attr="content:descricao-meta"
+      content="Portfólio de Paulo Fernando Carvalho, estudante de Ciência da Computação na UFU: sistemas de ponta a ponta em Python e TypeScript, com demonstrações que abrem no navegador."
+    />
+    <meta property="og:title" content="Paulo Fernando Carvalho · Portfólio" />
+    <meta property="og:description" content="Projetos com demonstração no navegador: PRANCHETA 11, ResolveAI, Campo Minado com RL, AgendaKi e mais." />
+    <meta property="og:type" content="website" />
+    <link rel="alternate" hreflang="pt-BR" href="https://paulo-carvalho10.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://paulo-carvalho10.github.io/?lang=en" />
+    <meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#07090c" media="(prefers-color-scheme: dark)" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236ea8ff'/%3E%3Cstop offset='1' stop-color='%2334d399'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-weight='700' font-size='15' text-anchor='middle' fill='%2304110c'%3EPC%3C/text%3E%3C/svg%3E"
+    />
+    <script>
+      // Marca que o JavaScript está ligado e aplica o tema escolhido antes de desenhar (evita piscar).
+      document.documentElement.classList.add("js");
+      try {
+        var tema = localStorage.getItem("tema");
+        if (tema === "light" || tema === "dark") document.documentElement.dataset.theme = tema;
+      } catch (e) {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400..600&display=swap" />
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <div class="ceu" aria-hidden="true">
+      <div class="pontos"></div>
+      <div class="brilho b1"></div>
+      <div class="brilho b2"></div>
+      <div class="brilho b3"></div>
+    </div>
+
+    <header class="topo">
+      <div class="recipiente">
+        <div class="cabecalho">
+          <a class="marca" href="#inicio" aria-label="Paulo Fernando Carvalho, início" data-i18n-attr="aria-label:marca-aria">
+            <span class="marca-icone" aria-hidden="true">PC</span>
+            <span>Paulo <span class="nome-meio">Fernando </span>Carvalho</span>
+          </a>
+          <span class="local-topo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z" /><circle cx="12" cy="9.5" r="2.5" /></svg>
+            <span data-i18n="local">Uberlândia - MG</span>
+          </span>
+          <nav aria-label="Seções" data-i18n-attr="aria-label:nav-aria">
+            <a href="#projetos" data-i18n="nav-projetos">Projetos</a>
+            <a href="#sobre" data-i18n="nav-sobre">Sobre</a>
+            <a href="#contato" data-i18n="nav-contato">Contato</a>
+          </nav>
+          <div class="botao-idioma" role="group" aria-label="Idioma · Language">
+            <button type="button" data-lang="pt" aria-pressed="true" title="Português">PT</button>
+            <button type="button" data-lang="en" aria-pressed="false" title="English">EN</button>
+          </div>
+          <button class="botao-tema" type="button" aria-label="Alternar tema claro e escuro">
+            <svg class="sol" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+            </svg>
+            <svg class="lua" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <section class="abertura">
+        <div class="recipiente abertura-grade">
+          <div class="abertura-texto">
+            <div class="selos-abertura">
+              <p class="pilula sem-foto">
+                <span class="ponto-vivo" aria-hidden="true"></span>
+                <span data-i18n="disponivel">Disponível para trabalhos e projetos</span>
+              </p>
+              <p class="local-abertura">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z" /><circle cx="12" cy="9.5" r="2.5" /></svg>
+                <span data-i18n="local">Uberlândia - MG</span>
+              </p>
+            </div>
+            <h1>Paulo Fernando<br />Carvalho<span class="gradiente">.</span></h1>
+            <p class="digitando" aria-hidden="true">
+              <span class="prompt">~$</span>
+              <span id="texto-digitado">medir antes de afirmar</span><span class="cursor"></span>
+            </p>
+            <p class="lide" data-i18n="lide">
+              Estudante de Ciência da Computação na UFU. Construo sistemas de ponta a ponta: o back-end em Python, o front em React
+              e Next.js, o banco, o deploy e os testes. Quase todo projeto aqui abre no navegador.
+            </p>
+            <div class="acoes">
+              <a class="botao primario" href="#projetos">
+                <span data-i18n="ver-projetos">Ver projetos</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7" /></svg>
+              </a>
+              <a class="botao" href="#contato" data-i18n="fale-comigo">Fale comigo</a>
+            </div>
+            <ul class="redes" id="redes-abertura" aria-label="Contatos" data-i18n-attr="aria-label:contatos-aria"></ul>
+          </div>
+
+          <div class="palco com-quadro">
+            <canvas
+              class="rede-neural"
+              id="rede-neural"
+              role="img"
+              aria-label="Animação de uma rede neural: sinais passam de camada em camada e os neurônios acendem quando o sinal chega."
+              data-i18n-attr="aria-label:rede-aria"
+            ></canvas>
+            <span class="chip pensando"><span data-i18n="pensando">pensando</span><span class="reticencias" aria-hidden="true"><i></i><i></i><i></i></span></span>
+          </div>
+        </div>
+
+        <div class="recipiente">
+          <ul class="numeros">
+            <li class="revelar"><strong data-contar="6">6</strong><span data-i18n="num-demos">projetos com demonstração para abrir agora, sem instalar nada</span></li>
+            <li class="revelar" style="--atraso: 0.08s"><strong data-contar="660" data-sufixo="+">660+</strong><span data-i18n="num-testes">testes automatizados no PRANCHETA 11, AgendaKi e PixCerto</span></li>
+            <li class="revelar" style="--atraso: 0.16s"><strong data-contar="87.3" data-casas="1" data-sufixo="%">87,3%</strong><span data-i18n="num-dqn">de vitórias da nossa DQN no Campo Minado 9×9</span></li>
+          </ul>
+        </div>
+
+        <div class="faixa" aria-label="Tecnologias que uso" data-i18n-attr="aria-label:faixa-aria">
+          <ul class="faixa-trilho">
+            <li>Python</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>FastAPI</li>
+            <li>PostgreSQL</li>
+            <li>pgvector</li>
+            <li>Redis</li>
+            <li>PyTorch</li>
+            <li>NumPy</li>
+            <li>OpenTelemetry</li>
+            <li>Docker</li>
+            <li>Supabase</li>
+            <li>Tailwind CSS</li>
+            <li>Vitest</li>
+            <li>Pytest</li>
+            <li>Playwright</li>
+            <li>GitHub Actions</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="secao" id="projetos" aria-labelledby="titulo-projetos">
+        <div class="recipiente">
+          <div class="secao-cabeca revelar">
+            <div>
+              <p class="rotulo-secao" data-i18n="rotulo-projetos">01 · Projetos</p>
+              <h2 id="titulo-projetos" data-i18n="titulo-projetos">Coisas que dá para abrir e testar</h2>
+              <p data-i18n="texto-projetos">Cada card abre a demonstração ou os detalhes do projeto. Os números vêm de testes e medições que estão no código.</p>
+            </div>
+            <div class="filtros" role="group" aria-label="Filtrar projetos" data-i18n-attr="aria-label:filtros-aria">
+              <button class="filtro" type="button" data-filtro="todos" aria-pressed="true" data-i18n="filtro-todos">Todos</button>
+              <button class="filtro" type="button" data-filtro="ia" aria-pressed="false" data-i18n="filtro-ia">IA</button>
+              <button class="filtro" type="button" data-filtro="web" aria-pressed="false" data-i18n="filtro-web">Sistemas web</button>
+              <button class="filtro" type="button" data-filtro="jogo" aria-pressed="false" data-i18n="filtro-jogo">Jogos</button>
+            </div>
+          </div>
+
+          <div class="grade" id="lista-projetos"></div>
+          <p class="so-leitor" id="aviso-filtro" aria-live="polite"></p>
+
+          <div class="mais" id="mais-projetos" hidden>
+            <h3 data-i18n="mais-github">Mais no GitHub</h3>
+            <ul></ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="secao" id="sobre" aria-labelledby="titulo-sobre">
+        <div class="recipiente sobre">
+          <div class="sobre-texto revelar">
+            <p class="rotulo-secao" data-i18n="rotulo-sobre">02 · Sobre</p>
+            <h2 id="titulo-sobre">
+              <span data-i18n="titulo-sobre-1">Teoria é o começo.</span>
+              <span class="gradiente" data-i18n="titulo-sobre-2">Sistema no ar é a prova.</span>
+            </h2>
+            <p class="citacao" data-i18n="sobre-citacao">
+              Cansado de apenas ver teoria, aprendi que a forma mais simples é construindo sistemas e colocando em atividade.
+            </p>
+            <p data-i18n="sobre-1">
+              Estudo Ciência da Computação na Universidade Federal de Uberlândia e construo de ponta a ponta: o back-end em Python,
+              o front em React e Next.js com TypeScript, o banco, o deploy e os testes.
+            </p>
+            <p data-i18n="sobre-2">
+              Gosto de projeto que dá para conferir. Por isso cada projeto aqui tem uma demonstração no ar ou uma gravação, e os
+              números dos cards vêm de testes e medições que estão no repositório.
+            </p>
+          </div>
+          <dl class="blocos-sobre">
+            <div class="revelar">
+              <dt data-i18n="bloco-formacao">Formação</dt>
+              <dd>
+                <span class="grande" data-i18n="formacao-curso">Ciência da Computação</span>
+                <span class="pequeno" data-i18n="formacao-local">Universidade Federal de Uberlândia (UFU)</span>
+              </dd>
+            </div>
+            <div class="revelar" style="--atraso: 0.06s">
+              <dt data-i18n="bloco-agora">Agora</dt>
+              <dd>
+                <span class="grande" data-i18n="agora-1">Construindo o TraceFlow</span>
+                <span class="pequeno" data-i18n="agora-2">e estudando sistemas distribuídos, filas e bancos de séries temporais</span>
+              </dd>
+            </div>
+            <div class="revelar" style="--atraso: 0.12s">
+              <dt data-i18n="bloco-linguagens">Linguagens</dt>
+              <dd><ul class="lista-tags"><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>Java</li><li>SQL</li></ul></dd>
+            </div>
+            <div class="revelar" style="--atraso: 0.18s">
+              <dt data-i18n="bloco-backend">Back-end e dados</dt>
+              <dd><ul class="lista-tags"><li>FastAPI</li><li>PostgreSQL</li><li>Redis</li><li>Supabase</li><li>NumPy</li><li>PyTorch</li><li>OpenCV</li></ul></dd>
+            </div>
+            <div class="revelar" style="--atraso: 0.24s">
+              <dt data-i18n="bloco-frontend">Front-end</dt>
+              <dd><ul class="lista-tags"><li>React</li><li>Next.js</li><li>Tailwind CSS</li><li>HTML</li><li>CSS</li></ul></dd>
+            </div>
+            <div class="revelar" style="--atraso: 0.3s">
+              <dt data-i18n="bloco-infra">Infra e testes</dt>
+              <dd><ul class="lista-tags"><li>Docker</li><li>Vercel</li><li>GitHub Actions</li><li>Git</li><li>Pytest</li><li>Vitest</li><li>Playwright</li></ul></dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="secao" id="contato" aria-labelledby="titulo-contato">
+        <div class="recipiente">
+          <div class="contato-card revelar">
+            <div>
+              <div class="cartao-pessoa">
+                <span class="marca-icone grande" aria-hidden="true">PC</span>
+                <div>
+                  <strong id="nome-completo">Paulo Fernando Azevedo de Carvalho</strong>
+                  <span id="curso-cidade">Ciência da Computação · UFU · Uberlândia - MG</span>
+                </div>
+              </div>
+              <p class="rotulo-secao" data-i18n="rotulo-contato">03 · Contato</p>
+              <h2 id="titulo-contato">
+                <span data-i18n="contato-titulo-1">Vamos</span> <span class="gradiente" data-i18n="contato-titulo-2">conversar?</span>
+              </h2>
+              <p class="texto" data-i18n="contato-texto">
+                Estou disponível para trabalho, estágio, freela ou projeto, do jeito que fizer sentido. Se tiver uma vaga ou uma ideia,
+                me mande um e-mail ou me chame no LinkedIn.
+              </p>
+              <div class="email-linha" id="email-linha"></div>
+            </div>
+            <ul class="lista-contatos" id="lista-contatos"></ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="recipiente">
+        <div>
+          © <span id="ano">2026</span> Paulo Fernando Azevedo de Carvalho ·
+          <span data-i18n="rodape-texto">Feito à mão em HTML, CSS e JavaScript.</span>
+        </div>
+        <div class="contatos" id="contatos"></div>
+      </div>
+    </footer>
+
+    <dialog class="detalhes" id="detalhes" aria-labelledby="detalhes-titulo">
+      <div class="detalhes-cabeca">
+        <h2 id="detalhes-titulo"></h2>
+        <span class="selo construcao" id="detalhes-status" hidden></span>
+        <button class="botao discreto fechar" type="button" data-fechar>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" /></svg>
+          <span data-i18n="fechar">Fechar</span>
+        </button>
+      </div>
+      <div class="detalhes-rolagem">
+        <div class="visor">
+          <figure style="margin: 0">
+            <div class="visor-midia" id="visor-midia"></div>
+            <figcaption id="visor-legenda"></figcaption>
+          </figure>
+          <div class="miniaturas" id="miniaturas" role="group" aria-label="Imagens do projeto" data-i18n-attr="aria-label:imagens-aria"></div>
+        </div>
+        <div class="detalhes-texto">
+          <div>
+            <p class="resumo" id="detalhes-resumo"></p>
+            <p class="descricao" id="detalhes-descricao"></p>
+            <p class="autoria" id="detalhes-autoria" hidden></p>
+            <h3 data-i18n="destaques">Destaques</h3>
+            <ul class="destaques" id="detalhes-destaques"></ul>
+          </div>
+          <aside>
+            <div id="detalhes-como" hidden>
+              <h3 data-i18n="como-testar">Como testar</h3>
+              <p class="nota" id="detalhes-nota"></p>
+            </div>
+            <h3 data-i18n="tecnologias">Tecnologias</h3>
+            <ul class="etiquetas" id="detalhes-tecnologias" style="margin-top: 0"></ul>
+            <h3 data-i18n="links">Links</h3>
+            <div class="links-detalhes" id="detalhes-links"></div>
+          </aside>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="projetos.js"></script>
+    <script src="textos-en.js"></script>
+    <script src="idioma.js"></script>
+    <script src="tema.js"></script>
+    <script src="site.js"></script>
+    <script src="rede-neural.js"></script>
+  </body>
+</html>
